@@ -1,0 +1,9 @@
+.footer-link {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
