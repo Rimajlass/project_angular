@@ -1,13 +1,43 @@
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
+.conf-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #d8e2ef;
+  border-radius: 15px;
+  padding: 1.15rem 1.2rem;
+  background: #f8fafd;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
 }
 
-.card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.conf-card:hover {
+  border-color: #a9c7e8;
+  box-shadow: 0 .6rem 1.35rem rgba(27, 58, 99, .1);
+  transform: translateY(-3px);
 }
 
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .12) !important;
+.conf-title {
+  color: #1b3a63;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin-bottom: .75rem;
+}
+
+.section-card { border-left-color: #0f766e; }
+
+.section-card .form-control {
+  max-width: 560px;
+  min-height: 48px;
+  border-color: #d9e1eb;
+  border-radius: 11px;
+}
+
+.section-card .form-control:focus {
+  border-color: #73a8e0;
+  box-shadow: 0 0 0 .2rem rgb(40 103 199 / 12%);
+}
+
+.conf-card .btn { align-self: flex-start; padding: .55rem 1rem; font-weight: 650; }
+
+@media (max-width: 575px) {
+  .conf-card { padding: 1rem; }
 }

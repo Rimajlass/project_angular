@@ -1,8 +1,9 @@
 export interface Conference {
   id: number;
-  picture: string;
   title: string;
+  description: string;
   date: Date;
-  address: string;
-  available_places: number;
+  place: string;
+  maxParticipants: number;
+  nbParticipants: number;
 }

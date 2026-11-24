@@ -1,0 +1,41 @@
+.site-header {
+  position: relative;
+  overflow: hidden;
+  padding: 2.4rem 1rem 2.2rem;
+  color: #fff;
+  background: linear-gradient(120deg, #183e6d, #2f6db5);
+}
+
+.site-header::after {
+  position: absolute;
+  right: -4rem;
+  bottom: -8rem;
+  width: 18rem;
+  height: 18rem;
+  border: 1px solid rgb(255 255 255 / 12%);
+  border-radius: 50%;
+  content: '';
+}
+
+.site-header .container {
+  position: relative;
+  z-index: 1;
+}
+
+.site-header h1 {
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 750;
+  letter-spacing: -.035em;
+}
+
+.site-header p:last-child {
+  color: rgb(255 255 255 / 82%);
+  font-size: 1.05rem;
+}
+
+.eyebrow {
+  color: #c7ddf7;
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+}

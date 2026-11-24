@@ -3,3 +3,22 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+main > * {
+  scroll-margin-top: 5rem;
+}
+
+@media (max-width: 575px) {
+  main { padding: 1.25rem .85rem 2rem; }
+}
